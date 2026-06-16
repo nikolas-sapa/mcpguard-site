@@ -236,7 +236,7 @@
 
     <section id="checks">
       <div class="wrap">
-        <span class="kicker">11 checks · one command</span>
+        <span class="kicker">12 checks · one command</span>
         <h2>Point it at a server. Get a severity-ranked report.</h2>
         <p class="lead">Works over Streamable HTTP, SSE, and local stdio. Markdown, JSON, and CI-friendly exit codes. Every detector is covered by a test that proves it fires on real attacks and stays quiet on benign servers.</p>
         <div class="checks">
@@ -251,6 +251,7 @@
           <div class="check"><span class="mk">09</span><div><b>Sensitive capability</b><br /><span>Filesystem, code-exec, or network reach</span></div></div>
           <div class="check"><span class="mk">10</span><div><b>Schema strength</b><br /><span>Missing, untyped, or unsealed input schemas</span></div></div>
           <div class="check"><span class="mk">11</span><div><b>Safety annotations</b><br /><span>Missing readOnlyHint / destructiveHint</span></div></div>
+          <div class="check"><span class="mk">12</span><div><b>Unicode hygiene</b><br /><span>Invisible / bidi / homoglyph characters hiding instructions</span></div></div>
         </div>
       </div>
     </section>
