@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>mcpguard — security scanner for MCP servers</title>
+    <title>toolfence — security scanner for MCP servers</title>
     <meta
       name="description"
-      content="OAuth authenticated your agents. It didn't make them safe. mcpguard scans any MCP server and reports the risks your agents inherit — tool poisoning, prompt injection, drift, scope, and cost."
+      content="OAuth authenticated your agents. It didn't make them safe. toolfence scans any MCP server and reports the risks your agents inherit — tool poisoning, prompt injection, drift, scope, and cost."
     />
-    <meta property="og:title" content="mcpguard — security scanner for MCP servers" />
+    <meta property="og:title" content="toolfence — security scanner for MCP servers" />
     <meta
       property="og:description"
       content="OAuth authenticated your agents. It didn't make them safe. Scan any MCP server in one command."
@@ -165,12 +165,12 @@
   <body>
     <nav>
       <div class="wrap">
-        <div class="brand"><span class="dot"></span> mcpguard</div>
+        <div class="brand"><span class="dot"></span> toolfence</div>
         <div class="nav-links">
           <a href="#problem">The problem</a>
           <a href="#checks">Checks</a>
           <a href="#arc">Roadmap</a>
-          <a class="btn ghost" href="https://github.com/nikolas-sapa/mcpguard">GitHub ↗</a>
+          <a class="btn ghost" href="https://github.com/nikolas-sapa/toolfence">GitHub ↗</a>
         </div>
       </div>
     </nav>
@@ -181,20 +181,20 @@
         <h1>OAuth authenticated your agents. It didn't make them <span class="accent">safe</span>.</h1>
         <p class="sub">
           AI agents plug into thousands of MCP servers — most written by strangers — to read your data, run code, and spend your money.
-          <strong style="color: var(--text)">mcpguard</strong> scans any MCP server and reports the risks your agents inherit the moment they connect.
+          <strong style="color: var(--text)">toolfence</strong> scans any MCP server and reports the risks your agents inherit the moment they connect.
         </p>
         <div class="cta-row">
           <div class="cmd">
-            <span class="prompt">$</span><code id="cmd">npx mcpguard https://your-server/mcp</code>
+            <span class="prompt">$</span><code id="cmd">npx toolfence https://your-server/mcp</code>
             <span class="copy" onclick="copyCmd()">copy</span>
           </div>
-          <a class="btn" href="https://github.com/nikolas-sapa/mcpguard">Star on GitHub</a>
+          <a class="btn" href="https://github.com/nikolas-sapa/toolfence">Star on GitHub</a>
         </div>
 
         <div class="terminal">
           <div class="term-bar">
             <span class="d r"></span><span class="d y"></span><span class="d g"></span>
-            <span class="title">mcpguard — scan report</span>
+            <span class="title">toolfence — scan report</span>
           </div>
           <div class="term-body">
 <div class="l"><span class="dim">  target:  https://acme-tools.example.com/mcp</span></div>
@@ -266,26 +266,26 @@
           <div class="phase"><span class="n">LATER</span><h3>Tool marketplace</h3><p>Curated, scanned, metered MCP servers — with monetization rails for authors.</p></div>
         </div>
         <div class="cta-row" style="margin-top: 44px">
-          <a class="btn" href="https://github.com/nikolas-sapa/mcpguard">Get started on GitHub</a>
-          <a class="btn ghost" href="https://github.com/nikolas-sapa/mcpguard/blob/main/CONTRIBUTING.md">Contribute a signature</a>
+          <a class="btn" href="https://github.com/nikolas-sapa/toolfence">Get started on GitHub</a>
+          <a class="btn ghost" href="https://github.com/nikolas-sapa/toolfence/blob/main/CONTRIBUTING.md">Contribute a signature</a>
         </div>
       </div>
     </section>
 
     <footer>
       <div class="wrap">
-        <div class="brand"><span class="dot"></span> mcpguard</div>
+        <div class="brand"><span class="dot"></span> toolfence</div>
         <div style="display: flex; gap: 24px; font-size: 14px">
-          <a href="https://github.com/nikolas-sapa/mcpguard">GitHub</a>
-          <a href="https://github.com/nikolas-sapa/mcpguard/blob/main/README.md">Docs</a>
-          <a href="https://github.com/nikolas-sapa/mcpguard/blob/main/LICENSE">Apache 2.0</a>
+          <a href="https://github.com/nikolas-sapa/toolfence">GitHub</a>
+          <a href="https://github.com/nikolas-sapa/toolfence/blob/main/README.md">Docs</a>
+          <a href="https://github.com/nikolas-sapa/toolfence/blob/main/LICENSE">Apache 2.0</a>
         </div>
       </div>
     </footer>
 
     <script>
       function copyCmd() {
-        navigator.clipboard.writeText("npx mcpguard https://your-server/mcp");
+        navigator.clipboard.writeText("npx toolfence https://your-server/mcp");
         var el = document.querySelector(".copy");
         var prev = el.textContent;
         el.textContent = "copied";
